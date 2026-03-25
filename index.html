@@ -1,110 +1,201 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Alves Adesivos</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alves Adesivos</title>
 
-  <link rel="stylesheet" href="style.css">
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #0f172a, #020617);
+  color: #fff;
+}
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+/* HEADER */
+header {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #2563eb, #22c55e);
+  color: white;
+}
+
+header h1 {
+  font-size: 38px;
+}
+
+header p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+/* BOTÃO */
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background: white;
+  color: #111;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+}
+
+/* SEÇÕES */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* CARDS */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(135deg, #1e293b, #334155);
+  padding: 25px;
+  border-radius: 20px;
+  transition: 0.3s;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03);
+}
+
+/* GALERIA */
+.galeria img {
+  width: 100%;
+  border-radius: 20px;
+  transition: 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* WHATS */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  padding: 18px;
+  border-radius: 50%;
+  font-size: 22px;
+  text-decoration: none;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+}
+
+/* FOOTER */
+footer {
+  background: #020617;
+  padding: 30px;
+  text-align: center;
+  color: #94a3b8;
+}
+</style>
 </head>
+
+<script src="script.js"></script>
 <body>
 
-<!-- MENU -->
-<nav class="menu">
-  <h2>Alves Adesivos</h2>
-  <div>
-    <a href="#sobre">Sobre</a>
-    <a href="#antes">Resultados</a>
-    <a href="#contato">Contato</a>
-  </div>
-</nav>
-
-<!-- HERO -->
 <header>
-  <div class="overlay">
-    <h1>Transforme seu ambiente sem reforma</h1>
-    <p>Sem sujeira • Sem quebra • Resultado profissional</p>
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <h1>Renove sua casa sem obra</h1>
+  <p>Adesivos modernos para móveis e ambientes — rápido, limpo e econômico</p>
 
-    <p class="local">📍 Londrina e região</p>
-
-    <a href="#contato" class="btn">Solicitar orçamento</a>
-  </div>
+  <a class="btn" href="#" onclick="enviarWhats()">
+    Fazer Orçamento
+  </a>
 </header>
 
-<!-- NÚMEROS -->
-<section class="numeros">
+<section>
+  <h2>✨ Serviços</h2>
   <div class="cards">
-    <div class="card"><h2>+200</h2><p>Projetos feitos</p></div>
-    <div class="card"><h2>100%</h2><p>Clientes satisfeitos</p></div>
-    <div class="card"><h2>1 dia</h2><p>Transformação rápida</p></div>
+    <div class="card">Móveis renovados</div>
+    <div class="card">Geladeiras estilizadas</div>
+    <div class="card">Cozinhas modernas</div>
+    <div class="card">Portas e paredes</div>
   </div>
 </section>
 
-<!-- SOBRE -->
-<section id="sobre">
-  <h2>Renove sem gastar com reforma</h2>
-  <p>
-    Trabalhamos com adesivos premium resistentes à água e calor.
-    Ideal para cozinha, banheiro e móveis.
-  </p>
+<section>
+  <h2>🔥 Por que escolher?</h2>
+  <div class="cards">
+    <div class="card">Sem sujeira</div>
+    <div class="card">Aplicação rápida</div>
+    <div class="card">Mais barato que reforma</div>
+    <div class="card">Visual novo instantâneo</div>
+  </div>
 </section>
 
-<!-- ANTES/DEPOIS -->
-<section id="antes">
-  <h2>Antes e Depois</h2>
-  <p>Veja resultados reais no nosso Instagram</p>
+<section>
+  <h2>📸 Veja resultados reais</h2>
+  <div class="galeria">
+    <a href="https://www.instagram.com/alves.adesivos/" target="_blank">
+      <img src="https://via.placeholder.com/400x300" alt="Antes e depois">
+    </a>
+  </div>
+</section>
 
-  <a href="https://www.instagram.com/alves.adesivos/" target="_blank" class="btn">
-    Ver transformações
+<section>
+  <h2>🚀 Fale comigo agora</h2>
+  <p>Orçamento rápido direto no WhatsApp</p>
+  <br>
+  <a class="btn" href="#" onclick="enviarWhats()">
+    Chamar no WhatsApp
   </a>
 </section>
 
-<!-- DEPOIMENTOS -->
-<section class="depoimentos">
-  <h2>Clientes satisfeitos</h2>
-
-  <div class="cards">
-    <div class="card">
-      <p>"Ficou perfeito, parece outro móvel!"</p>
-      ⭐⭐⭐⭐⭐
-    </div>
-
-    <div class="card">
-      <p>"Muito rápido e sem bagunça"</p>
-      ⭐⭐⭐⭐⭐
-    </div>
-
-    <div class="card">
-      <p>"Melhor investimento que fiz na casa"</p>
-      ⭐⭐⭐⭐⭐
-    </div>
-  </div>
-</section>
-
-<!-- CONTATO -->
-<section id="contato">
-  <h2>Solicite seu orçamento</h2>
-
-  <form onsubmit="enviarWhats(event)">
-    <input type="text" id="nome" placeholder="Seu nome" required>
-    <input type="text" id="servico" placeholder="O que deseja transformar?" required>
-    <button type="submit">Enviar</button>
-  </form>
-</section>
-
-<!-- BOTÃO FLUTUANTE -->
-<a href="https://wa.me/5543984046323" class="zap-fixo">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
-
 <footer>
-  © 2026 Alves Adesivos
+  Atendimento em Londrina e região
 </footer>
 
-<script src="script.js"></script>
+<a href="#" class="whatsapp">💬</a>
+
+<script>
+const numeroWhats = "5543984046323"; 
+
+function enviarWhats(tipo = "") {
+  let mensagem = "Olá, quero um orçamento de adesivo";
+
+  const link = `https://wa.me/${numeroWhats}?text=${encodeURIComponent(mensagem)}`;
+  window.open(link, "_blank");
+}
+
+document.querySelector(".whatsapp").addEventListener("click", function(e) {
+  e.preventDefault();
+  enviarWhats();
+});
+
+document.querySelectorAll(".card").forEach(card => {
+  card.addEventListener("click", () => {
+    enviarWhats();
+  });
+});
+</script>
 
 </body>
 </html>
