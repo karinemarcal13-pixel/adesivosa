@@ -4,22 +4,12 @@ function enviarWhats(event) {
   let nome = document.getElementById("nome").value;
   let servico = document.getElementById("servico").value;
 
-  if (nome === "" || servico === "") {
-    alert("Preencha tudo 😅");
-    return;
-  }
+  let mensagem = `Olá, meu nome é ${nome}
+Quero orçamento
 
-  let numero = "5543984046323";
-
-  let mensagem = `Olá, tudo bem?
-Meu nome é ${nome}
-Quero um orçamento
-
-📍 Atendimento: Londrina e região
+📍 Londrina e região
 
 Serviço: ${servico}`;
 
-  let url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
-
-  window.open(url, "_blank");
+  window.open(`https://wa.me/5543984046323?text=${encodeURIComponent(mensagem)}`);
 }

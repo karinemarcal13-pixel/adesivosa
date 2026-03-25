@@ -6,85 +6,102 @@
 
   <link rel="stylesheet" href="style.css">
 
-  <!-- Ícones -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
+<!-- MENU -->
 <nav class="menu">
   <h2>Alves Adesivos</h2>
   <div>
     <a href="#sobre">Sobre</a>
-    <a href="#vantagens">Vantagens</a>
-    <a href="#servicos">Serviços</a>
+    <a href="#antes">Resultados</a>
     <a href="#contato">Contato</a>
   </div>
 </nav>
 
+<!-- HERO -->
 <header>
-  <h1><i class="fa-solid fa-paint-roller"></i> Alves Adesivos</h1>
-  <p>Transforme seu ambiente sem reforma</p>
+  <div class="overlay">
+    <h1>Transforme seu ambiente sem reforma</h1>
+    <p>Sem sujeira • Sem quebra • Resultado profissional</p>
 
-  <p class="local">
-    📍 Atendemos Londrina e região
-  </p>
+    <p class="local">📍 Londrina e região</p>
 
-  <a href="#contato" class="btn">
-    <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento
-  </a>
+    <a href="#contato" class="btn">Solicitar orçamento</a>
+  </div>
 </header>
 
-<section class="sobre" id="sobre">
-  <h2>Transformações incríveis</h2>
+<!-- NÚMEROS -->
+<section class="numeros">
+  <div class="cards">
+    <div class="card"><h2>+200</h2><p>Projetos feitos</p></div>
+    <div class="card"><h2>100%</h2><p>Clientes satisfeitos</p></div>
+    <div class="card"><h2>1 dia</h2><p>Transformação rápida</p></div>
+  </div>
+</section>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <h2>Renove sem gastar com reforma</h2>
   <p>
-    Dê uma nova vida aos seus móveis e paredes sem gastar com reforma.
+    Trabalhamos com adesivos premium resistentes à água e calor.
+    Ideal para cozinha, banheiro e móveis.
   </p>
 </section>
 
-<section class="vantagens" id="vantagens">
-  <h2>Por que escolher?</h2>
-  <div class="cards">
-    <div class="card">💰 Econômico</div>
-    <div class="card">⚡ Rápido</div>
-    <div class="card">💧 Resistente</div>
-    <div class="card">🎨 Personalizado</div>
-  </div>
-</section>
+<!-- ANTES/DEPOIS -->
+<section id="antes">
+  <h2>Antes e Depois</h2>
+  <p>Veja resultados reais no nosso Instagram</p>
 
-<section class="servicos" id="servicos">
-  <h2>O que transformamos</h2>
-  <div class="cards">
-    <div class="card">🍳 Cozinhas</div>
-    <div class="card">🚿 Banheiros</div>
-    <div class="card">🪑 Móveis</div>
-    <div class="card">🏠 Ambientes</div>
-  </div>
-</section>
-
-<section class="galeria">
-  <h2>Veja resultados reais</h2>
   <a href="https://www.instagram.com/alves.adesivos/" target="_blank" class="btn">
-    Ver no Instagram
+    Ver transformações
   </a>
 </section>
 
-<section class="contato" id="contato">
-  <h2>Peça seu orçamento</h2>
+<!-- DEPOIMENTOS -->
+<section class="depoimentos">
+  <h2>Clientes satisfeitos</h2>
+
+  <div class="cards">
+    <div class="card">
+      <p>"Ficou perfeito, parece outro móvel!"</p>
+      ⭐⭐⭐⭐⭐
+    </div>
+
+    <div class="card">
+      <p>"Muito rápido e sem bagunça"</p>
+      ⭐⭐⭐⭐⭐
+    </div>
+
+    <div class="card">
+      <p>"Melhor investimento que fiz na casa"</p>
+      ⭐⭐⭐⭐⭐
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <h2>Solicite seu orçamento</h2>
 
   <form onsubmit="enviarWhats(event)">
     <input type="text" id="nome" placeholder="Seu nome" required>
     <input type="text" id="servico" placeholder="O que deseja transformar?" required>
     <button type="submit">Enviar</button>
   </form>
-
-  <a href="https://wa.me/5543984046323" class="whatsapp">WhatsApp</a>
-  <a href="https://www.instagram.com/alves.adesivos/" target="_blank" class="instagram">Instagram</a>
 </section>
 
+<!-- BOTÃO FLUTUANTE -->
+<a href="https://wa.me/5543984046323" class="zap-fixo">
+  <i class="fa-brands fa-whatsapp"></i>
+</a>
+
 <footer>
-  <p>© 2026 Alves Adesivos</p>
+  © 2026 Alves Adesivos
 </footer>
 
 <script src="script.js"></script>
