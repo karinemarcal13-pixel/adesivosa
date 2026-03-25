@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Adesivos Decorativos</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+<header>
+  <h1>Transforme seu ambiente sem reforma</h1>
+  <p>Elegância, rapidez e economia com adesivos de alto padrão</p>
+
+  <div class="botoes">
+    <a href="https://wa.me/5543998721117" target="_blank">Solicitar orçamento</a>
+    <a href="https://instagram.com" target="_blank">Ver Instagram</a>
+  </div>
+</header>
+
+<!-- GALERIA -->
+<section class="galeria">
+  <h2>Transformações reais</h2>
+
+  <div class="grid">
+    <div class="img-box">
+      <img src="images/img1.jpg" onclick="abrirImagem(this)">
+    </div>
+    <div class="img-box">
+      <img src="images/img2.jpg" onclick="abrirImagem(this)">
+    </div>
+    <div class="img-box">
+      <img src="images/img3.jpg" onclick="abrirImagem(this)">
+    </div>
+    <div class="img-box">
+      <img src="images/img4.jpg" onclick="abrirImagem(this)">
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" onclick="fecharImagem()">
+  <img id="img-ampliada">
+</div>
+
+<!-- VANTAGENS -->
+<section class="vantagens">
+  <h2>Por que usar adesivos?</h2>
+
+  <div class="cards">
+    <div class="card">💰 Muito mais barato que reforma</div>
+    <div class="card">⚡ Aplicação rápida (em horas)</div>
+    <div class="card">💧 Resistente à água e umidade</div>
+    <div class="card">🎨 Design moderno e sofisticado</div>
+    <div class="card">🏠 Ideal para qualquer ambiente</div>
+    <div class="card">🔄 Renovação sem sujeira</div>
+  </div>
+</section>
+
+<!-- FORM -->
+<section class="formulario">
+  <h2>Solicitar orçamento</h2>
+
+  <form onsubmit="validarFormulario(event)">
+    <input type="text" name="nome" placeholder="Seu nome" required>
+    <input type="text" name="whatsapp" placeholder="Seu WhatsApp" required>
+
+    <select name="tipo">
+      <option>Parede</option>
+      <option>Móvel</option>
+      <option>Banheiro</option>
+    </select>
+
+    <textarea name="mensagem" placeholder="Descreva seu projeto"></textarea>
+
+    <button type="submit">Falar no WhatsApp</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 - Adesivos Decorativos</p>
+</footer>
+
+<a href="https://wa.me/5543998721117" class="whatsapp-fixo">💬</a>
+
+<script src="script.js"></script>
+
+</body>
+</html>
