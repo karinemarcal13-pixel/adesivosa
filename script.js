@@ -51,12 +51,3 @@ function validarFormulario(e) {
 
   enviarWhatsApp(nome, tipo, mensagem);
 }
-
-function abrirImagem(img) {
-  document.getElementById("lightbox").style.display = "flex";
-  document.getElementById("img-ampliada").src = img.src;
-}
-
-function fecharImagem() {
-  document.getElementById("lightbox").style.display = "none";
-}
