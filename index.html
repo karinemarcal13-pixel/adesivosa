@@ -2,77 +2,90 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Adesivos Decorativos</title>
+  <title>Alves Adesivos</title>
 
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-
 <body>
 
-<header>
-  <h1>Transforme seu ambiente sem reforma</h1>
-  <p>Elegância, rapidez e economia com adesivos de alto padrão</p>
-
-  <div class="botoes">
-    <a href="https://wa.me/5543998721117" target="_blank">Solicitar orçamento</a>
-    <a href="https://instagram.com/SEU_USUARIO" target="_blank">Ver Instagram</a>
+<nav class="menu">
+  <h2>Alves Adesivos</h2>
+  <div>
+    <a href="#sobre">Sobre</a>
+    <a href="#vantagens">Vantagens</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#contato">Contato</a>
   </div>
+</nav>
+
+<header>
+  <h1><i class="fa-solid fa-paint-roller"></i> Alves Adesivos</h1>
+  <p>Transforme seu ambiente sem reforma</p>
+
+  <p class="local">
+    📍 Atendemos Londrina e região
+  </p>
+
+  <a href="#contato" class="btn">
+    <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento
+  </a>
 </header>
 
-<!-- INSTAGRAM -->
-<section class="galeria">
-  <h2>Transformações reais</h2>
-  <p>Veja resultados reais e inspire-se com nossos trabalhos</p>
-
-  <div class="instagram-box">
-    <a href="https://instagram.com/SEU_USUARIO" target="_blank">
-      Ver transformações no Instagram
-    </a>
-  </div>
+<section class="sobre" id="sobre">
+  <h2>Transformações incríveis</h2>
+  <p>
+    Dê uma nova vida aos seus móveis e paredes sem gastar com reforma.
+  </p>
 </section>
 
-<!-- VANTAGENS -->
-<section class="vantagens">
-  <h2>Por que usar adesivos?</h2>
-
+<section class="vantagens" id="vantagens">
+  <h2>Por que escolher?</h2>
   <div class="cards">
-    <div class="card">💰 Muito mais barato que reforma</div>
-    <div class="card">⚡ Aplicação rápida (em horas)</div>
-    <div class="card">💧 Resistente à água e umidade</div>
-    <div class="card">🎨 Design moderno e sofisticado</div>
-    <div class="card">🏠 Ideal para qualquer ambiente</div>
-    <div class="card">🔄 Renovação sem sujeira</div>
+    <div class="card">💰 Econômico</div>
+    <div class="card">⚡ Rápido</div>
+    <div class="card">💧 Resistente</div>
+    <div class="card">🎨 Personalizado</div>
   </div>
 </section>
 
-<!-- FORM -->
-<section class="formulario">
-  <h2>Solicitar orçamento</h2>
+<section class="servicos" id="servicos">
+  <h2>O que transformamos</h2>
+  <div class="cards">
+    <div class="card">🍳 Cozinhas</div>
+    <div class="card">🚿 Banheiros</div>
+    <div class="card">🪑 Móveis</div>
+    <div class="card">🏠 Ambientes</div>
+  </div>
+</section>
 
-  <form onsubmit="validarFormulario(event)">
-    <input type="text" name="nome" placeholder="Seu nome" required>
-    <input type="text" name="whatsapp" placeholder="Seu WhatsApp" required>
+<section class="galeria">
+  <h2>Veja resultados reais</h2>
+  <a href="https://www.instagram.com/alves.adesivos/" target="_blank" class="btn">
+    Ver no Instagram
+  </a>
+</section>
 
-    <select name="tipo">
-      <option>Parede</option>
-      <option>Móvel</option>
-      <option>Banheiro</option>
-    </select>
+<section class="contato" id="contato">
+  <h2>Peça seu orçamento</h2>
 
-    <textarea name="mensagem" placeholder="Descreva seu projeto"></textarea>
-
-    <button type="submit">Falar no WhatsApp</button>
+  <form onsubmit="enviarWhats(event)">
+    <input type="text" id="nome" placeholder="Seu nome" required>
+    <input type="text" id="servico" placeholder="O que deseja transformar?" required>
+    <button type="submit">Enviar</button>
   </form>
+
+  <a href="https://wa.me/5543984046323" class="whatsapp">WhatsApp</a>
+  <a href="https://www.instagram.com/alves.adesivos/" target="_blank" class="instagram">Instagram</a>
 </section>
 
 <footer>
-  <p>© 2026 - Adesivos Decorativos</p>
+  <p>© 2026 Alves Adesivos</p>
 </footer>
-
-<a href="https://wa.me/5543998721117" class="whatsapp-fixo">💬</a>
 
 <script src="script.js"></script>
 
